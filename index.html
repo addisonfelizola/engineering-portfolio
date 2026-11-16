@@ -1268,7 +1268,7 @@ body.toc-open{overflow:hidden}
           {opacity:1, transform:"translateY(0px)"}
         ],{duration:900, delay:delay, easing:"cubic-bezier(.22,.8,.24,1)", fill:"backwards"});
         var pimg = el.querySelector ? el.querySelector(".photo img") : null;
-        if(pimg){
+        if(pimg && !el.classList.contains("about-photo-col")){
           pimg.animate([
             {transform:"scale(1.045)"},
             {transform:"scale(1)"}
