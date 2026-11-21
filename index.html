@@ -5,8 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 <meta name="color-scheme" content="light dark" />
 <link rel="icon" href="data:," />
-<title>Addison Felizola - Engineering Portfolio (Sample)</title>
-<meta name="description" content="Addison Felizola, mechanical engineering student at UW Tacoma. Rocket camera mount, greenhouse build, BMW M4 systems. Sample: the live engineering portfolio with the hub preview motion layer added." />
+<title>Addison Felizola - Engineering Portfolio</title>
+<meta name="description" content="Addison Felizola, mechanical engineering student at UW Tacoma. Rocket camera mount, greenhouse build, BMW M4 systems." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
@@ -112,7 +112,7 @@
   .hero-eyebrow .caps{color:var(--muted-l)}
   h1.name{
     margin:0;font-weight:300;letter-spacing:-.035em;line-height:.94;
-    font-size:clamp(64px,11.5vw,168px);color:#f6f5f0;
+    font-size:clamp(56px,11.5vw,168px);color:#f6f5f0;
   }
   h1.name .h-line{display:block;overflow:hidden;padding-bottom:.09em;margin-bottom:-.09em}
   h1.name .h-line > span{display:inline-block;transform:translateY(112%);transition:transform 1.15s var(--ease)}
@@ -283,22 +283,6 @@
   .pills span:hover{background:var(--ink);color:#fff;transform:translateY(-2px)}
   @media(max-width:820px){.hands-grid{grid-template-columns:1fr}}
 
-  /* parallax photo band (added scroll moment, real photo) */
-  .photo-band{position:relative;height:clamp(300px,52vh,520px);overflow:hidden}
-  /* Parallax band: the photo is slightly taller than the band (118%, offset
-     up by 9%) so it has room to drift on scroll without opening a gap at
-     either edge - the drift range in the script stays well inside that
-     overscan. The crop window sits low in the source (62%), which drops
-     the window toward the road and rides the car a little higher in the
-     frame: still in the bottom third, but with the wheels clear of the
-     bottom edge at every point of the drift. */
-  .photo-band img{position:absolute;left:0;top:-9%;width:100%;height:118%;object-fit:cover;object-position:center 62%;will-change:transform}
-  .photo-band .pb-cap{
-    position:absolute;left:var(--pad);bottom:20px;z-index:2;color:#fff;
-    font-size:11px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;
-    text-shadow:0 1px 12px rgba(0,0,0,.45);
-  }
-  .photo-band::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.12),rgba(0,0,0,0) 40%,rgba(0,0,0,.28))}
 
   /* contact card */
   .contact-card{
@@ -428,7 +412,7 @@
 
       <div class="hero-facts fade-item fd3">
         <p>Designer on the SAME structures team. Builder the rest of the time.</p>
-        <p>Junior · GPA 3.6 · expected June 2029</p>
+        <p>Junior · expected June 2029</p>
         <p>Tacoma, Washington</p>
         <p>U.S. citizen · ITAR / U.S. Person</p>
         <span class="pill"><i aria-hidden="true"></i>Available Summer 2027</span>
@@ -493,7 +477,7 @@
           <div class="spec-grid">
             <div class="spec-row"><span class="k">Team</span><span class="v">SAME structures · UW Tacoma</span></div>
             <div class="spec-row"><span class="k">Rocket</span><span class="v">Wildman Extreme dual deploy · 4 in body tube</span></div>
-            <div class="spec-row"><span class="k">Camera</span><span class="v">Onboard</span></div>
+            <div class="spec-row"><span class="k">Camera</span><span class="v">RunCam 6</span></div>
             <div class="spec-row"><span class="k">Role</span><span class="v">Designer · Oct 2026 to present</span></div>
             <div class="spec-row"><span class="k">Focus</span><span class="v">Fit + aerodynamics</span></div>
           </div>
@@ -522,6 +506,7 @@
             <div class="spec-row"><span class="k">When</span><span class="v">Jun to Sep 2026</span></div>
             <div class="spec-row"><span class="k">Where</span><span class="v">Olympia, Washington</span></div>
             <div class="spec-row"><span class="k">Size</span><span class="v">20 ft by 40 ft</span></div>
+            <div class="spec-row"><span class="k">Hoops</span><span class="v">10</span></div>
             <div class="spec-row"><span class="k">Build</span><span class="v">3 weeks · two-person crew</span></div>
             <div class="spec-row"><span class="k">Level</span><span class="v">Within 0.25 in over the full length</span></div>
           </div>
@@ -582,11 +567,11 @@
       </div>
       <div>
         <p class="about-lead rv">I am a junior studying mechanical engineering at UW Tacoma. Coursework gives me the theory. <strong>The rocket team, the greenhouse, and my own car give me the practice.</strong></p>
-        <p class="about-copy rv d1">In labs I have measured, weighed, recorded data, and tested in chemistry and physics. On the rocket team I work with an engineering lead and a sub lead, on the same Structures team. Outside engineering I have worked as a lifeguard, on a street crew, and co-run a small reselling business since 2022. Different jobs, same habit: show up, do the work properly, finish it.</p>
+        <p class="about-copy rv d1">In labs I have measured, weighed, recorded data, and tested in chemistry and physics. On the rocket team I work with an engineering lead and a sub-lead, on the same Structures team. Outside engineering I have worked as a lifeguard, on a street crew, and co-run a small reselling business since 2022. Different jobs, same habit: show up, do the work properly, finish it.</p>
         <div class="fact-table rv d1">
           <div class="fact-row"><span class="k">School</span><span class="v">University of Washington Tacoma</span></div>
           <div class="fact-row"><span class="k">Degree</span><span class="v">B.S. Mechanical Engineering</span></div>
-          <div class="fact-row"><span class="k">Standing</span><span class="v">Junior · GPA 3.6</span></div>
+          <div class="fact-row"><span class="k">Standing</span><span class="v">Junior</span></div>
           <div class="fact-row"><span class="k">Graduation</span><span class="v">June 2029</span></div>
           <div class="fact-row"><span class="k">Based</span><span class="v">Tacoma, Washington</span></div>
           <div class="fact-row"><span class="k">Eligibility</span><span class="v">U.S. citizen · ITAR / U.S. Person</span></div>
@@ -606,7 +591,7 @@
         <h3 class="rv">What I can do.</h3>
         <div class="list-item rv">
           <div class="li-head"><h4>CAD design</h4><span class="tag">Onshape</span></div>
-          <p>Part modelling and revision for the rocket camera mount. Sizing to the tube, and cleaning a design down to fewer, better parts.</p>
+          <p>Part modeling and revision for the rocket camera mount. Sizing to the tube, and cleaning a design down to fewer, better parts.</p>
         </div>
         <div class="list-item rv">
           <div class="li-head"><h4>Build and assembly</h4><span class="tag">Hands-on</span></div>
@@ -624,18 +609,18 @@
         <h3 class="rv">Where I have worked.</h3>
         <div class="list-item rv">
           <div class="li-head"><h4>Structures team, SAME rocket build</h4><span class="tag">UW Tacoma</span></div>
-          <p>Designing the external camera mount for the team rocket, on the Structures team with the engineering lead and sub lead.</p>
+          <p>Designing the external camera mount for the team rocket, on the Structures team with the engineering lead and sub-lead.</p>
         </div>
         <div class="list-item rv">
-          <div class="li-head"><h4>Lifeguard</h4><span class="tag">Valley Athletic Club</span></div>
-          <p>Pool safety and emergency response. Responsibility for other people, held calmly.</p>
+          <div class="li-head"><h4>Lifeguard</h4><span class="tag">Valley Athletic Club · Feb 2022 to Feb 2023</span></div>
+          <p>Responded to emergencies using Red Cross First Aid and CPR training. Responsibility for other people, held calmly.</p>
         </div>
         <div class="list-item rv">
-          <div class="li-head"><h4>Street crew</h4><span class="tag">Dick's Drive-In</span></div>
+          <div class="li-head"><h4>Street crew</h4><span class="tag">Dick's Drive-In · Sep 2025 to Jan 2026</span></div>
           <p>Fast, physical, public-facing work as part of a small crew.</p>
         </div>
         <div class="list-item rv">
-          <div class="li-head"><h4>Co owner, reselling business</h4><span class="tag">2022 to now</span></div>
+          <div class="li-head"><h4>Co-owner, reselling business (Depop)</h4><span class="tag">Oct 2022 to now</span></div>
           <p>Sold over 300 items, with a 4.75 star rating.</p>
         </div>
         <div class="list-item rv">
@@ -670,7 +655,7 @@
       </div>
       <div class="cc-foot">
         <span class="caps">Also on</span>
-        <span>linkedin <span aria-hidden="true">&#8599;</span></span>
+        <a href="https://www.linkedin.com/in/addisonfelizola/" target="_blank" rel="noopener">linkedin <span aria-hidden="true">&#8599;</span></a>
       </div>
     </div>
   </section>
@@ -684,8 +669,8 @@
     <span class="row b">talk.</span>
   </p>
   <div class="foot-bar">
-    <span>(c) 2026 Addison Felizola</span>
-    <a href="https://addisonfelizola.github.io/engineering-portfolio/" target="_blank" rel="noopener">Current live portfolio</a>
+    <span>© 2026 Addison Felizola</span>
+    <span>Current live portfolio</span>
     <span>Tacoma, WA · <span id="footTime">--:--</span> PT</span>
   </div>
 </footer>
@@ -813,8 +798,6 @@
   var heroArtImg = document.getElementById("heroArtImg");
   var splitB = document.getElementById("splitB");
   var marqueeTrack = document.getElementById("marqueeTrack");
-  var bandImg = document.getElementById("bandImg");
-  var photoBand = document.querySelector(".photo-band");
   var lastY = window.scrollY || 0;
   var skew = 0;
   var mx = 0, my = 0, cmx = 0, cmy = 0;
@@ -849,16 +832,6 @@
         if (sr.top < vh && sr.bottom > 0) {
           var sp = (vh - sr.top) / (vh + sr.height);
           splitB.style.transform = "translateX(" + ((sp - 0.5) * -36) + "px)";
-        }
-      }
-      /* car photo band: gentle parallax drift as the band crosses the screen.
-         Total travel is 36px, inside the photo's 9% top/bottom overscan, so
-         no edge ever shows and the wheels stay clear of the bottom. */
-      if (bandImg && photoBand) {
-        var br = photoBand.getBoundingClientRect();
-        if (br.top < vh && br.bottom > 0) {
-          var bp = Math.min(1, Math.max(0, (vh - br.top) / (vh + br.height)));
-          bandImg.style.transform = "translateY(" + ((bp - 0.5) * 36).toFixed(2) + "px)";
         }
       }
       /* marquee leans with scroll velocity, then settles */
